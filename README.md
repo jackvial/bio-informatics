@@ -7,5 +7,5 @@ npm install
 
 Run tests:
 ```bash
-ǹpm test
+npm test
 ```
