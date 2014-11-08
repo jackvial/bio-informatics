@@ -1,0 +1,21 @@
+{
+  "name": "bio-informatics",
+  "version": "1.0.0",
+  "description": "Bio-informatic algorithms",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "Genome",
+    "DNA",
+    "nodejs",
+    "Javascript",
+    "Biology"
+  ],
+  "author": "Jack Vial",
+  "license": "MIT",
+  "devDependencies": {
+    "jest-cli": "^0.1.18"
+  }
+}

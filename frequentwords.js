@@ -28,7 +28,7 @@ function frequentWords(text, k){
 
 
 	console.log(freqPatterns); 
-	//return pattern;
+	return freqPatterns;
 	
 }
 
