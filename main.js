@@ -1,4 +1,6 @@
-var patternCount = require('./patterncount.js');
+//var patternCount = require('./patterncount.js');
+var frequentWords = require('./frequentwords.js');
+
 // Make sure we got a filename on the command line.
 if (process.argv.length < 3) {
   console.log('Usage: node ' + process.argv[1] + ' FILENAME');
@@ -12,7 +14,6 @@ var fs = require('fs')
 fs.readFile(filename, 'utf8', function(err, data) {
   if (err) throw err;
 
-  console.log(patternCount(data, 'ACTGGCAAC'));
-  //console.log('OK: ' + filename);
-  //console.log(data)
+  console.log(frequentWords(data, 11));
+
 });
