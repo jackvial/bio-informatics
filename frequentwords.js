@@ -6,6 +6,7 @@ function frequentWords(text, k){
 
 	// Somewhere to store patterns
 	var freqPatterns = [];
+	var maxFreqPatterns = [];
 	var count = {};
 	var maxCount = 0;
 	var currentCount = 0;
@@ -25,10 +26,15 @@ function frequentWords(text, k){
 		//console.log(maxCount);		
 	}
 	
-
-
-	console.log(freqPatterns); 
-	return freqPatterns;
+	for(var key in freqPatterns){
+		//console.log(freqPatterns[key]);
+		if(freqPatterns[key] == maxCount){
+			maxFreqPatterns.push(key);
+		}
+	}	
+	
+	//console.log(freqPatterns); 
+	return maxFreqPatterns;
 	
 }
 
