@@ -1,5 +1,5 @@
 //var patternCount = require('./patterncount.js');
-var frequentWords = require('./frequentwords.js');
+var reverseComplement = require('./reversecomplement.js');
 
 // Make sure we got a filename on the command line.
 if (process.argv.length < 3) {
@@ -13,6 +13,9 @@ var fs = require('fs'), filename = process.argv[2];
 fs.readFile(filename, 'utf8', function(err, data) {
   if (err) throw err;
 
-  console.log(frequentWords(data, 11));
-
+  fs.writeFile('r-comp.txt', reverseComplement(data), function (err) {
+    if (err) throw err;
+    console.log('It\'s saved!');
+  });
+ 
 });
