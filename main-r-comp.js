@@ -1,4 +1,3 @@
-//var patternCount = require('./patterncount.js');
 var reverseComplement = require('./reversecomplement.js');
 
 var readline = require('readline');
