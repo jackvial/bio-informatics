@@ -5,7 +5,8 @@
 function indicesOfPattern(pattern, genome){
 	
 	var startIndex = 0, patternLen = pattern.length;
-	// Kepp track of each occurrence of the pattern
+
+	// Keepp track of each occurrence of the pattern
 	var index, indices = [];
 
 	// Keeps going as long as an instance of the pattern in found in the genome

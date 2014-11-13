@@ -16,7 +16,7 @@ function frequentWords(text, k){
 		var pattern = text.substr(i, k);
 
 		// How many times does the current pattern(i, k) appear in the text
-		//count[pattern] = patternCount(text, pattern);
+		// count[pattern] = patternCount(text, pattern);
 		currentCount = patternCount(text, pattern);
 
 		if(currentCount >= maxCount){
