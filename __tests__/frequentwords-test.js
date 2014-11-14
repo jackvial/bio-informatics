@@ -10,10 +10,20 @@ describe('frequentWords', function () {
 	});
 
 	it('shoud return an array', function(){
-
 		var text = 'ATAGCTGATAATAGCTATATATTTGTATA';
 
-		expect(frequentWords(text, 3)).toEqual([]);
+		expect(Array.isArray(frequentWords(text, 3))).toBe(true);
+	});
+
+	it('shoud return the most frequent words', function(){
+
+		var genome = 'ATAGCTGATAATAGCTATATATTTGTATA';
+		var mostFrequentWords = ['ATA'];
+
+		var freqWords = frequentWords(genome, 3);
+		console.log('freqwords=', freqWords);
+
+		expect(freqWords).toEqual(mostFrequentWords);
 	});
 
 });
