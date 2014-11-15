@@ -13,6 +13,7 @@ function findClumps(genome, k, l, t){
 	var maxCount = t;
 	var currentCount = 0;
 	var range = l;
+	var pattern = '';
 
 	//console.log('pattern count=', patternCount(genome, 'GA'));
 
@@ -23,8 +24,8 @@ function findClumps(genome, k, l, t){
 
 		for(var j = i; j < subGenome.length - k; j++){
 
-			var pattern = subGenome.substr(j, k);
-			console.log(pattern);
+			pattern = subGenome.substr(j, k);
+			//console.log(pattern);
 
 			// How many times does the current pattern(i, k) appear in the text
 			// count[pattern] = patternCount(text, pattern);
