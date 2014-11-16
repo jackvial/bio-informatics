@@ -20,7 +20,7 @@ describe('findClumps', function () {
 		var t = 4; // Number of times k must appear within the range l to form a clump 
 
 		// Output
-		var clumps = ['CGACA','GAAGA'];
+		var clumps = {'CGACA': 4,'GAAGA': 4};
 
 		expect(findClumps(genome, k, l, t)).toEqual(clumps);
 	});

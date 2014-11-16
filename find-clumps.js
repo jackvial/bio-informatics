@@ -9,7 +9,7 @@
 var patternCount = require('./patterncount.js');
 
 function findClumps(genome, k, l, t){
-	var clumps = [];
+	var clumps = {};
 	var maxCount = t;
 	var currentCount = 0;
 	var range = l;

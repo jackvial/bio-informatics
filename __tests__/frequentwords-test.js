@@ -23,7 +23,6 @@ describe('frequentWords', function () {
 		var mostFrequentWords = ['ATA'];
 
 		var freqWords = frequentWords(genome, 3);
-		console.log('freqwords=', freqWords);
 
 		expect(freqWords).toEqual(mostFrequentWords);
 	});
