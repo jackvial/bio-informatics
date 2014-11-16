@@ -1,8 +1,10 @@
-jest.dontMock('./../find-clumps.js');
+jest.dontMock('./../find-clumps.js')
+ .dontMock('./../patterncount.js');
 
 describe('findClumps', function () {
 
 	var findClumps = require('./../find-clumps.js');
+	var patternCount = require('./../patterncount.js');
 
 	it('should be defined', function () {
 
