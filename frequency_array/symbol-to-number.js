@@ -22,6 +22,7 @@ function symbolToNumber(symbol){
          return undefined;
     }
 
+    console.log('Symbol to num called coverted', symbol, ' to ', num);
     return num;
 }
 

@@ -1,8 +1,10 @@
-jest.dontMock('./../frequentwords.js');
+jest.dontMock('./../frequentwords.js')
+  .dontMock('./../patterncount.js');
 
 describe('frequentWords', function () {
 
 	var frequentWords = require('./../frequentwords.js');
+                        var patternCount = require('./../patterncount.js');
 
 	it('should be defined', function () {
 		
