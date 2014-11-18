@@ -10,10 +10,12 @@ function numberToPattern(index, k){
   if(k === 1) return numberToSymbol(index);
  
   //Get the quotient of index divided by k 
-  prefixIndex = Math.floor(index/k);
+  prefixIndex = Math.floor(index / 4);
+  console.log('prefixIndex: ',prefixIndex);
 
   // Get the remainder of index divided by k
-  remainder = index % k;
+  remainder = index % 4;
+  console.log('Remainder: ', remainder);
 
   // Recursively call numberToPattern
   prefixPattern = numberToPattern(prefixIndex, k - 1);
