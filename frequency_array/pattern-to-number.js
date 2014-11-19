@@ -16,7 +16,7 @@ function patternToNumber(pattern){
   // Remove the last character
   pattern = pattern.slice(0, -1);
 
-  console.log((4 * patternToNumber(pattern)) + symbolToNumber(symbol));
+  //console.log((4 * patternToNumber(pattern)) + symbolToNumber(symbol));
   // Convert recursively
   return (4 * patternToNumber(pattern)) + symbolToNumber(symbol);
 }
