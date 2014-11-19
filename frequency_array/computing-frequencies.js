@@ -7,7 +7,7 @@ function computingFrequencies(text, k){
 
     console.log(text.length);
    
-   for(var i = 0; i <= Math.pow(4, k); i++){
+   for(var i = 0; i < Math.pow(4, k); i++){
         frequencyArray[i] = 0;
     }
     
