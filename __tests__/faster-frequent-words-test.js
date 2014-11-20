@@ -3,7 +3,8 @@ jest
   .dontMock('./../frequency_array/computing-frequencies.js')
   .dontMock('./../frequency_array/number-to-pattern.js')
   .dontMock('./../frequency_array/symbol-to-number.js')
-  .dontMock('./../frequency_array/pattern-to-number.js');
+  .dontMock('./../frequency_array/pattern-to-number.js')
+  .dontMock('./../frequency_array/number-to-symbol.js');
 
 describe('Compute the most frequent k-mer in text', function () {
 
@@ -12,6 +13,7 @@ describe('Compute the most frequent k-mer in text', function () {
     var numberToPattern = require('./../frequency_array/number-to-pattern.js');
     var symbolToNumber = require('./../frequency_array/symbol-to-number.js');
     var patternToNumber = require('./../frequency_array/pattern-to-number.js');
+    var numberToSymbol = require('./../frequency_array/number-to-symbol.js');
 	
 	it('computingFrequencies should be defined', function(){
 		
@@ -25,10 +27,11 @@ describe('Compute the most frequent k-mer in text', function () {
 
 	it('fasterFrequentWords should return the most frequent words', function(){
 	    
-        var text = 'ACGCGGCTCTGAAA';
-        var kmer = 2;        
+        var text = 'ACGCGGCTCTGAAAATATATATATATATATATATATATATATATATATATATAT';
+        var kmer = 3;        
+        var expectedResult = 'ATA TAT'
 
-		expect(fasterFrequentWords(text, kmer)).toEqual('ATA');
+		expect(fasterFrequentWords(text, kmer).join(' ')).toEqual('ATA TAT');
 	});
 
 });
