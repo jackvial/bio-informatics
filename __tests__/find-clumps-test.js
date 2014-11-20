@@ -1,14 +1,21 @@
 jest.dontMock('./../find-clumps.js')
- .dontMock('./../patterncount.js');
+    .dontMock('./../frequency_array/computing-frequencies.js')
+    .dontMock('./../frequency_array/number-to-pattern.js')
+    .dontMock('./../frequency_array/symbol-to-number.js')
+    .dontMock('./../frequency_array/pattern-to-number.js')
+    .dontMock('./../frequency_array/number-to-symbol.js');
 
 describe('findClumps', function () {
 
 	var findClumps = require('./../find-clumps.js');
-	var patternCount = require('./../patterncount.js');
+    var computingFrequecies = require('./../frequency_array/computing-frequencies.js');
 
-	it('should be defined', function () {
-
+	it('ifindClumps should be defined', function () {
 		expect(findClumps).toBeDefined();
+	});
+
+	it('comoutingFrequcies should be defined', function () {
+		expect(computingFrequecies).toBeDefined();
 	});
 
 	it('should return all strings that meet the clump conditions', function(){
